@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const PORT = process.env.PORT==null?8080:process.env.PORT
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(port, () => {
-  console.log(`Tienda en línea lista en puerto ${port}`)
+app.listen(PORT, () => {
+  console.log(`Tienda en línea lista en puerto ${PORT}`)
 })

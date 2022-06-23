@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
-    "run": "node app.js"
+    "run": "node app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "homepage": "https://github.com/joseluisrg/super-site#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "engines": {
+    "npm": "6.14.17",
+    "node": "14.19.2"
   }
 }
